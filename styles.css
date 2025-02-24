@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5%;
+    gap: 40px; 
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    justify-content: center;
+}
+
+
+.container > div {
+    background: hsl(30, 38%, 92%);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.container > div:hover {
+    transform: scale(1.03);
+}
+
+
+.container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.category {
+    font-size: 0.9rem;
+    color: hsl(228, 12%, 48%);
+    margin-top: 10px;
+}
+
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin-top: 5px;
+}
+
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: hsl(14, 86%, 42%);
+    margin-top: 5px;
+}
+
+
+button {
+    width: 90%;
+    padding: 10px;
+    background-color: hsl(20, 50%, 98%);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: hsl(14, 86%, 42%);
+}
+
+main {
+    flex: 2 1 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+aside {
+    flex: 1 1 30%;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 10px;
+}
+
+aside img {
+    width: 70%;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main, aside {
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+

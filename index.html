@@ -5,70 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css"/>
   
   <title>Frontend Mentor | Product list with cart</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+    <main>
+      <header>
+        <h1>Desserts</h1>
+      </header>
+      <div class="container">
+        <div class="waffle">
+          <img src="./assets/image-waffle-desktop.jpg" alt="Waffle with Berries">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Waffle</p>
+          <p class="name">Waffle with Berries</p>
+          <p class="price">$6.50</p>
+        </div>
+        <div class="bean">
+          <img src="./assets/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Crème Brûlée</p>
+          <p class="name">Vanilla Bean Crème Brûlée</p>
+          <p class="price">$7.00</p>
+        </div>
+        <div class="macaron">
+          <img src="./assets/image-macaron-desktop.jpg" alt="Macaron Mix of Five">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Macaron</p>
+          <p class="name">Macaron Mix of Five</p>
+          <p class="price">$8.00</p>
+        </div>
+        <div class="tiramisu">
+          <img src="./assets/image-tiramisu-desktop.jpg" alt="Classic Tiramisu">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Tiramisu</p>
+          <p class="name">Classic Tiramisu</p>
+          <p class="price">$5.50</p>
+        </div>
+        <div class="baklava">
+          <img src="./assets/image-baklava-desktop.jpg" alt="Pistachio Baklava">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Baklava</p>
+          <p class="name">Pistachio Baklava</p>
+          <p class="price">$4.00</p>
+        </div>
+        <div class="pie">
+          <img src="./assets/image-meringue-desktop.jpg" alt="Lemon Meringue Pie">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Pie</p>
+          <p class="name">Lemon Meringue Pie</p>
+          <p class="price">$5.00</p>
+        </div>
+        <div class="cake">
+          <img src="./assets/image-cake-desktop.jpg" alt="Red Velvet Cake">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Cake</p>
+          <p class="name">Red Velvet Cake</p>
+          <p class="price">$4.50</p>
+        </div>
+        <div class="brownie">
+          <img src="./assets/image-brownie-desktop.jpg" alt="Salted Caramel Brownie">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Brownie</p>
+          <p class="name">Salted Caramel Brownie</p>
+          <p class="price">$4.50</p>
+        </div>
+        <div class="panna">
+          <img src="./assets/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta">
+          <button><p>Add to Cart</p></button>
+          <p class="category">Panna Cotta</p>
+          <p class="name">Vanilla Panna Cotta</p>
+          <p class="price">$6.50</p>
+        </div>
+      </div>
+      
+    </main>
 
-  Desserts
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+    <aside class="cart-summary">
+      <h2>Your Cart (7)</h2>
+      <img src="./assets/illustration-empty-cart.svg" alt="Empty cart">
+    </aside>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
